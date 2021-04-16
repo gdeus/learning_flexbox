@@ -10,11 +10,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import BackgroundCarousel from './backgroundCarrousel';
 import { ViewCarrousel } from './styles';
+import CarousselTest from './caroussel';
 
 
 export default function Login(){
     return(
-        <ViewCarrousel>
+        <div className='gradient'>
+            <CarousselTest/>
             <header>
                 <div style={{
                     display: 'flex',
@@ -124,6 +126,6 @@ export default function Login(){
                     </div>
                 </div>
             </body>
-        </ViewCarrousel>
+        </div>
     );
 }
