@@ -1,0 +1,48 @@
+.carrousel{
+    background-color: aqua;
+}
+
+.font{
+  color: white;
+  font-size: 5.0em;
+}
+
+.root{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../assets/teste.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.test{
+  margin-top: 100;
+  margin-left: auto;
+  background-color: white;
+  margin-right: 50px;
+  border-radius: 50px;
+}
+
+.logo{
+  width: 250;
+  height: 100;
+}
+
+.transparent{
+  background-color: #11ffee00
+}
+
+@media (max-width: 768px) {
+  .desc {
+    display: none;
+  }
+  .test{
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .font{
+    display: none;
+  }
+}
