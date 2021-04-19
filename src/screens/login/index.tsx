@@ -18,18 +18,8 @@ export default function Login(){
         <div className='gradient'>
             <CarousselTest/>
             <header>
-                <div style={{
-                    display: 'flex',
-                    marginTop: 100,
-                    marginLeft: 100,
-                    marginRight: 100,
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                }}>
-                    <div style={{
-                        width: 250,
-                        height: 100
-                    }}>
+                <div className="header-style">
+                    <div className="logo">
                         <img src={logo} alt="Logo People Club" className="logo" width={250} height={100}/>
                     </div>
                     <div>
@@ -98,8 +88,7 @@ export default function Login(){
                             }}/> 
                         </div>
                     </div>
-                    <div className="test" 
-                    >
+                    <div className="test">
                         <div style={{
                             paddingLeft: 80,
                             paddingRight: 80,

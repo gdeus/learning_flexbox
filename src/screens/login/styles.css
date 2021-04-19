@@ -30,13 +30,23 @@
   margin-top: 100;
   margin-left: auto;
   background-color: white;
+  min-width: 300px;
   margin-right: 50px;
   border-radius: 50px;
 }
 
 .logo{
-  width: 250;
+  width: 450;
   height: 100;
+}
+
+.header-style{
+  display: flex;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .transparent{
@@ -51,8 +61,18 @@
     background-color: white;
     margin-left: 20px;
     margin-right: 20px;
+    min-width: 300px;
   }
   .font{
     display: none;
+  }
+  .header-style{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
   }
 }
