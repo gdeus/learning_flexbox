@@ -10,13 +10,14 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import BackgroundCarousel from './backgroundCarrousel';
 import { ViewCarrousel } from './styles';
-import CarousselTest from './caroussel';
-
+import CarousselTeste from './carouselTest';
+import CarouselText from './carouselText';
 
 export default function Login(){
     return(
-        <div className='gradient'>
-            <CarousselTest/>
+        <div>
+            <CarousselTeste/>
+            <div className='div-login'>
             <header>
                 <div className="header-style">
                     <div className="logo">
@@ -28,11 +29,11 @@ export default function Login(){
                 </div>
             </header>
             <body style={{
-                backgroundColor: 'transparent',
+                backgroundColor: 'transparent'
             }}>
                 <div style={{
                     display: 'flex',
-                    alignItems: 'baseline'
+                    alignItems: 'center'
                 }}>
                     <div className="desc" 
                     style={{
@@ -40,53 +41,9 @@ export default function Login(){
                         paddingLeft: 60
                     }}>
                         <div>
-                            <h1 style={{
-                                color: 'white',
-                                fontWeight: 'bold'
-                            }}>MAIS</h1>
-                            <h1 style={{
-                                color: 'white',
-                            }}>que benefícios</h1>
+                            <CarouselText/>
                         </div>
-                        <div style={{
-                            paddingTop: 22,
-                            color: 'white' 
-                        }}>
-                            <h2>Encontre diversão, comida e tudo o que você mais ama!</h2>
-                        </div>
-                        <div style={{
-                            display: 'flex',
-                            paddingTop: 50,
-                            flexDirection: 'row',
-                        }}>
-                            <div style={{
-                                width: 10,
-                                height: 10,
-                                borderRadius: 10,
-                                backgroundColor: 'red',
-                                marginRight: 10
-                            }}/> 
-                            <div style={{
-                                width: 10,
-                                height: 10,
-                                borderRadius: 10,
-                                backgroundColor: 'red',
-                                marginRight: 10
-                            }}/> 
-                            <div style={{
-                                width: 10,
-                                height: 10,
-                                borderRadius: 10,
-                                backgroundColor: 'red',
-                                marginRight: 10
-                            }}/> 
-                            <div style={{
-                                width: 10,
-                                height: 10,
-                                borderRadius: 10,
-                                backgroundColor: 'red'
-                            }}/> 
-                        </div>
+                        
                     </div>
                     <div className="test">
                         <div style={{
@@ -115,6 +72,7 @@ export default function Login(){
                     </div>
                 </div>
             </body>
+            </div>
         </div>
     );
 }

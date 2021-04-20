@@ -1,10 +1,17 @@
 .carrousel{
-    background-color: aqua;
+  background-color: aqua;
 }
 
 .font{
   color: white;
   font-size: 5.0em;
+}
+
+.imgCarousel{
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .root{
@@ -16,21 +23,38 @@
     background-size: cover;
 }
 
+.div-carrousel{
+  position: absolute;
+  margin-top: -100px;
+  z-index: 10;
+}
+
+.div-login{
+  position: relative;
+  z-index: 30;
+}
+
 .gradient{
   position: absolute;
   height: 100vh;
   width: 100vw;
   background: rgb(0,0,0);
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(142,90,237,1) 80%);
+  z-index: 20;
   opacity: 0.8;
-  z-index: 100;
+}
+
+.desc{
+  margin-top: 30px;
+  padding-left: 60px;
+  width: 50%;
 }
 
 .test{
   margin-top: 100;
   margin-left: auto;
   background-color: white;
-  min-width: 300px;
+  min-width: 400px;
   margin-right: 50px;
   border-radius: 50px;
 }
@@ -66,6 +90,7 @@
   .font{
     display: none;
   }
+  
   .header-style{
     display: flex;
     margin-top: 100px;
